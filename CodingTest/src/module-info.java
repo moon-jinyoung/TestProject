@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author moonpinggu
+ *
+ */
+module CodingTest {
+	
+}
