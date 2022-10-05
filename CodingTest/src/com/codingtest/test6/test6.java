@@ -11,7 +11,7 @@ public class test6 {
 		System.out.println(solution(number));
 	}
 
-	public static int[] solution(int n) {
+	public static String solution(int n) {
 		 int[] answer = {};
 		 List<Integer> a = new ArrayList<Integer>((int)(Math.log10(n)+1));
          String num = Long.toString(n);
@@ -25,6 +25,6 @@ public class test6 {
              arr[j] = a.get(j);
          }
 
-         return arr;
+         return Arrays.toString(arr);
     }
 }
