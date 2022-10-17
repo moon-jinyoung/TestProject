@@ -1,4 +1,4 @@
-package com.codingtest.test15;
+package com.codingtest.test;
 
 public class test15 {
 

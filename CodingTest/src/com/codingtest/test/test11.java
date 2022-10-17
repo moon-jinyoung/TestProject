@@ -1,6 +1,6 @@
-package com.codingtest.test10;
+package com.codingtest.test;
 
-public class test10 {
+public class test11 {
 
 	public static void main(String[] args) {
 		// 함수 solution은 정수 n을 매개변수로 입력받습니다. 

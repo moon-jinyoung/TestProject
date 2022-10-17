@@ -1,4 +1,4 @@
-package com.codingtest.test1;
+package com.codingtest.test;
 
 import java.util.Random;
 
