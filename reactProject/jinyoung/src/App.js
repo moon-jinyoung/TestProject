@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import './App.css';
-import Dots from "./Dots";
+import Dots from "./Dots"; // 우측 페이지 표시
 
 const DIVIDER_HEIGHT = 5;
 
