@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Clock from "./Clock";
 import Todo from "./Todo";
 
+// 우측 Todo 부분
 const Content = () => {
     return (
         <Container>

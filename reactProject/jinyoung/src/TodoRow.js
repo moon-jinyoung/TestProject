@@ -2,21 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 class TodoRow extends React.Component {
-    shouldComponentUpdate(nextProps, nextState) {
-      if (this.props.todo === nextProps.todo) {
-        return false;
-      }
-      return true;
+  // props 또는 state가 새로운 값으로 갱신되어서 렌더링이 발생하기 직전에 호출됩니다. 
+  // 기본값은 true입니다. false 리턴 시 렌더링 X
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.todo === nextProps.todo) {
+      return false;
     }
-    render() {
-      const { index, todo, handleClickRemove } = this.props;
-      return (
-        <Container>
-          <Text onClick={() => handleClickRemove(index)}>{todo}</Text>
-        </Container>
-      );
-    }
+    return true;
   }
+  render() {
+    const { index, todo, handleClickRemove } = this.props;
+    return (
+      <Container>
+        <Text onClick={() => handleClickRemove(index)}>{todo}</Text>
+      </Container>
+    );
+  }
+}
 
 const Container = styled.div`
   margin: 13px 0;

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TodoList from "./TodoList";
 
+// 메인 내용
 class Todo extends React.Component {
     state = {
         todoList: []
@@ -15,12 +16,14 @@ class Todo extends React.Component {
     ); 
   }
 
+  // 컴포넌트 렌더링 후 타는 함수
   componentDidMount() {
     this.setState({
       todoList: JSON.parse(localStorage.getItem("todoList")) || []
     });
   }
 
+  // 엔터 입력 시 로컬 스토리지에 저장
   handleInputKeyPress = event => {
     const {
         target: { value }
@@ -35,6 +38,7 @@ class Todo extends React.Component {
       }
   };
 
+  // 목록 클릭 시 삭제 로직
   handleClickRemove = index => {
     if (window.confirm("목록에서 지우시겠습니까?")) {
       this.setState(

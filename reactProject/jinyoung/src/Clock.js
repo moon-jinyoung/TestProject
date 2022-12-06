@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+// 시간 출력, Todo: 아래 소스 깔끔하게 정리하기
 class Clock extends React.Component {
     state = {
         date: new Date()
