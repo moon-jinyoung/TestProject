@@ -13,6 +13,7 @@ class App extends React.Component {
 }
 
 // 메인 백그라운드
+// url: 이미지 랜덤 주소
 const Container = styled.div`
   position: absolute;
   top: 0;
