@@ -1,3 +1,4 @@
+// 우측 점 표시
 const Dot = ({ num, scrollIndex }) => {
     return (
       <div
