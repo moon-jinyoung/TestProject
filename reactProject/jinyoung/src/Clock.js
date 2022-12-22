@@ -46,6 +46,7 @@ class Clock extends React.Component {
         });
     };
 
+    // 컴포넌트 렌더링 후 타는 함수
     componentDidMount() {
         this.Timer = setInterval(() => this.getDate(), 1000);
     }
