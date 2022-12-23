@@ -51,6 +51,7 @@ class Clock extends React.Component {
         this.Timer = setInterval(() => this.getDate(), 1000);
     }
 
+    // 컴포넌트 언마운트
     componentWillUnmount() {
         clearInterval(this.Timer);
     }
