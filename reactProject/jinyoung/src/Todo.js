@@ -34,7 +34,7 @@ class Todo extends React.Component {
           () =>
             localStorage.setItem("todoList", JSON.stringify(this.state.todoList))
         );
-        event.target.value = "";
+        event.target.value = ""; // 저장 후 내용 초기화
       }
   };
 
