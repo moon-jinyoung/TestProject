@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import TodoRow from "./TodoRow";
 
-// List View
 const TodoList = ({ todoList, handleClickRemove }) => {
     return (
         <Container>
